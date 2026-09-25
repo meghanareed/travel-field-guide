@@ -1,0 +1,591 @@
+{
+  "meta": {
+    "title": "[Region 1] · [Region 2]",
+    "subtitle": "[Trip Name]",
+    "appName": "[Trip]",
+    "pageTitle": "[Trip Name] · Travel Companion",
+    "description": "Private travel companion — [Region 1] & [Region 2], [Month Year]",
+    "brandCode": "[AB] · [CD]",
+    "dates": "[Month D–D, YYYY]",
+    "nightsLabel": "3 nights · 2 cities",
+    "summary": "Your trip runs [Month D–D, YYYY]: [City A] → [City B]. ",
+    "tripStart": "2027-06-01",
+    "tripEnd": "2027-06-04",
+    "bookingsTitle": "Tours & transfers"
+  },
+  "legs": {
+    "a": {
+      "name": "[Region 1]",
+      "flag": "🏳️",
+      "color": "#C8941E"
+    },
+    "b": {
+      "name": "[Region 2]",
+      "flag": "🏴",
+      "color": "#2F6B4F"
+    }
+  },
+  "glance": {
+    "route": [
+      {
+        "nights": "[Jun 1–3] (2)",
+        "city": "[City A]",
+        "hotel": "[Hotel A]",
+        "leg": "a"
+      },
+      {
+        "nights": "[Jun 3–4] (1)",
+        "city": "[City B]",
+        "hotel": "[Hotel B]",
+        "leg": "b"
+      }
+    ],
+    "flights": [
+      {
+        "k": "✈  Outbound",
+        "v": "[Day, Mon D] — [Home airport (XXX)] → [Arrival airport (YYY)], [airline + flight no.]"
+      },
+      {
+        "k": "✈  Return",
+        "v": "[Day, Mon D] — [Departure airport (YYY)] → [Home airport (XXX)], [airline + flight no.]"
+      }
+    ],
+    "key": [
+      "[Flights booked — confirmation ABC123]",
+      "[All hotels confirmed]",
+      "[Day-3 transfer booked with Driver Co.]"
+    ]
+  },
+  "hotels": [
+    {
+      "name": "[Hotel A]",
+      "address": "[Street address], [City A]",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%5BHotel%20A%5D%20%5BCity%20A%5D",
+      "phone": "+00 000 000 0000",
+      "notes": "[Location notes — e.g. 5 min walk to the main square, 10 min to the station.]"
+    },
+    {
+      "name": "[Hotel B]",
+      "address": "[Street address], [City B]",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=%5BHotel%20B%5D%20%5BCity%20B%5D",
+      "phone": "+00 000 000 0000",
+      "notes": "[Check-in time, breakfast hours, parking, etc.]"
+    }
+  ],
+  "bookings": [
+    {
+      "title": "🚐  [Transfer: City A → City B]",
+      "when": "[Day, Month D — 9:00 AM]",
+      "detail": {
+        "Pickup": "[Hotel A lobby]",
+        "Drop-off": "[Hotel B]",
+        "Route time": "[~2 hr]",
+        "Payment": "[Prepaid / pay driver in cash]"
+      },
+      "stops": [
+        {
+          "name": "[Scenic stop en route] (optional)",
+          "url": "https://www.google.com/maps/search/?api=1&query=%5BScenic%20stop%5D",
+          "desc": "[One line on why it's worth the stop.]"
+        }
+      ]
+    },
+    {
+      "title": "🍷  [Food or walking tour]",
+      "when": "[Day, Month D — 5:00 PM]",
+      "detail": {
+        "Meeting point": "[Meeting point]",
+        "Start time": "[5:00 PM — arrive 10 min early]"
+      },
+      "stops": []
+    }
+  ],
+  "cities": [
+    {
+      "city": "[City A]",
+      "leg": "a",
+      "links": [
+        {
+          "label": "Hotel",
+          "t": "[Hotel A]",
+          "u": "https://www.google.com/maps/search/?api=1&query=%5BHotel%20A%5D%20%5BCity%20A%5D"
+        },
+        {
+          "label": "Station",
+          "t": "[Main station] [City A]",
+          "u": "https://www.google.com/maps/search/?api=1&query=%5BMain%20station%5D%20%5BCity%20A%5D"
+        }
+      ],
+      "attractions": [
+        {
+          "t": "[Landmark 1]",
+          "u": "https://www.google.com/maps/search/?api=1&query=%5BLandmark%201%5D%20%5BCity%20A%5D",
+          "note": "[short note]"
+        },
+        {
+          "t": "[Landmark 2]",
+          "u": "https://www.google.com/maps/search/?api=1&query=%5BLandmark%202%5D%20%5BCity%20A%5D",
+          "note": "[short note]"
+        }
+      ],
+      "restaurants": [
+        {
+          "t": "[Restaurant 1]",
+          "u": "https://www.google.com/maps/search/?api=1&query=%5BRestaurant%201%5D%20%5BCity%20A%5D",
+          "note": "[signature dish]"
+        }
+      ]
+    },
+    {
+      "city": "[City B]",
+      "leg": "b",
+      "links": [
+        {
+          "label": "Hotel",
+          "t": "[Hotel B]",
+          "u": "https://www.google.com/maps/search/?api=1&query=%5BHotel%20B%5D%20%5BCity%20B%5D"
+        }
+      ],
+      "attractions": [
+        {
+          "t": "[Landmark 3]",
+          "u": "https://www.google.com/maps/search/?api=1&query=%5BLandmark%203%5D%20%5BCity%20B%5D",
+          "note": "[short note]"
+        }
+      ],
+      "restaurants": [
+        {
+          "t": "[Restaurant 2]",
+          "u": "https://www.google.com/maps/search/?api=1&query=%5BRestaurant%202%5D%20%5BCity%20B%5D",
+          "note": "[signature dish]"
+        }
+      ]
+    }
+  ],
+  "foods": [
+    {
+      "leg": "a",
+      "items": [
+        {
+          "name": "[Regional dish]",
+          "desc": "[What it is and where to order it.]"
+        }
+      ]
+    },
+    {
+      "leg": "b",
+      "items": [
+        {
+          "name": "[Regional dish]",
+          "desc": "[What it is and where to order it.]"
+        }
+      ]
+    }
+  ],
+  "transport": {
+    "tables": [
+      {
+        "name": "Airport transfers",
+        "tables": [
+          [
+            [
+              "Option",
+              "Time",
+              "Cost"
+            ],
+            [
+              "[Train]",
+              "[~20 min]",
+              "[€10]"
+            ],
+            [
+              "[Taxi]",
+              "[~30 min]",
+              "[€45]"
+            ]
+          ]
+        ],
+        "bullets": [
+          "[Buy tickets in the app; validate before boarding.]"
+        ]
+      }
+    ],
+    "notes": [
+      {
+        "title": "🚆  [Transit tip]",
+        "body": "[e.g. regional trains need no seat reservation — buy a ticket and board any train.]"
+      }
+    ]
+  },
+  "packing": [
+    {
+      "title": "🎒  Carry-on",
+      "items": [
+        "Passport",
+        "Phone + charger",
+        "Travel adapter",
+        "Medications",
+        "[Anything else]"
+      ]
+    },
+    {
+      "title": "🧳  Checked bag",
+      "items": [
+        "Walking shoes",
+        "Rain jacket",
+        "[Anything else]"
+      ]
+    },
+    {
+      "title": "🏨  Hotel checkout",
+      "items": [
+        "Chargers out of the walls",
+        "Safe emptied",
+        "Bathroom sweep"
+      ]
+    }
+  ],
+  "emergency": {
+    "general": "112",
+    "generalScope": "works everywhere on this trip",
+    "generalLabel": "All countries",
+    "numbers": [
+      {
+        "country": "[Country 1]",
+        "police": "[000]",
+        "amb": "[000]"
+      },
+      {
+        "country": "[Country 2]",
+        "police": "[000]",
+        "amb": "[000]"
+      }
+    ],
+    "embassyLabel": "US embassy",
+    "embassyFlag": "🇺🇸",
+    "hospitals": [
+      {
+        "city": "[City A]",
+        "hospital": "[Hospital name, address]",
+        "embassy": "U.S. Embassy: [address], +00 0 000 0000"
+      },
+      {
+        "city": "[City B]",
+        "hospital": "[Hospital name, address]",
+        "embassy": "U.S. Embassy: [address], +00 0 000 0000"
+      }
+    ],
+    "money": [
+      {
+        "k": "💶  Currency",
+        "v": "[Local currency; cards widely accepted — carry a little cash for markets.]"
+      },
+      {
+        "k": "🔌  Power",
+        "v": "[Plug type, voltage]"
+      },
+      {
+        "k": "🧾  Tax refund",
+        "v": "[VAT refund rules, if any]"
+      }
+    ]
+  },
+  "album": {
+    "url": "https://example.com/[your-shared-album]",
+    "label": "Open shared photo album",
+    "note": "[Opens the shared folder. Add your own shots and browse everyone else’s.]"
+  },
+  "shopping": {
+    "tip": "[Optional banner shown above each list — e.g. what's worth buying here vs at home.]",
+    "whyLabel": "Why buy it here",
+    "priceNote": "[Prices are rough guides in local currency and vary by size and shop.]",
+    "lists": [
+      {
+        "id": "group",
+        "label": "[Group]",
+        "flag": "🛍️",
+        "accent": "#A8423C",
+        "note": "[Where to shop — e.g. the big pharmacy near Hotel A]",
+        "tiers": [
+          {
+            "title": "⭐ Must",
+            "items": [
+              {
+                "n": "[Item name]",
+                "p": "[€10–15]",
+                "d": "[What it is / does.]",
+                "w": "[Why it's a better buy here.]"
+              }
+            ]
+          },
+          {
+            "title": "👍 Nice to have",
+            "items": [
+              {
+                "n": "[Item name]",
+                "p": "[€5–8]",
+                "d": "[What it is / does.]"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "days": [
+    {
+      "n": 1,
+      "weekday": "Tuesday",
+      "date": "June 1",
+      "iso": "2027-06-01",
+      "short": "Tue, Jun 1",
+      "leg": "transit",
+      "headline": "Travel Day — Depart",
+      "subtitle": "[Home] → [City A], overnight flight",
+      "overview": "[What today is about in 1–3 sentences.]",
+      "weather": "",
+      "walking": "",
+      "transport": "[Flight number / airline]",
+      "schedule": [
+        {
+          "time": "[3:00 PM]",
+          "plan": "[Leave for the airport]"
+        },
+        {
+          "time": "[6:30 PM]",
+          "plan": "[Flight departs]"
+        }
+      ],
+      "tour": null,
+      "callouts": [
+        {
+          "title": "✈️  [Travel-day tip]",
+          "body": "[e.g. download offline maps and this app before you leave Wi-Fi.]"
+        }
+      ],
+      "eat": [],
+      "foods": [],
+      "good": {
+        "packing": "[Neck pillow, snacks, empty water bottle]"
+      }
+    },
+    {
+      "n": 2,
+      "weekday": "Wednesday",
+      "date": "June 2",
+      "iso": "2027-06-02",
+      "short": "Wed, Jun 2",
+      "leg": "a",
+      "headline": "Arrive — [City A]",
+      "subtitle": "[Old town loop · first dinner]",
+      "overview": "[Arrive, drop bags at Hotel A, then an easy loop walk through the center.]",
+      "weather": "[Avg ~21°C / 70°F]",
+      "walking": "[~5 km]",
+      "transport": "[Train from airport ~20 min]",
+      "schedule": [
+        {
+          "time": "[9:00]",
+          "plan": "[Land; train to the center]"
+        },
+        {
+          "time": "[11:00]",
+          "plan": "[Drop bags at Hotel A]"
+        },
+        {
+          "time": "[12:00]",
+          "plan": "[Walking tour — stops 1–4]"
+        },
+        {
+          "time": "[19:30]",
+          "plan": "[Dinner at Restaurant 1]"
+        }
+      ],
+      "tour": {
+        "intro": "[Loop logic — e.g. leave the hotel, head south to the river (furthest point), cross, and come back up the old-town side to finish near the hotel.]",
+        "stops": [
+          {
+            "name": "[Landmark 1]",
+            "url": "https://www.google.com/maps/search/?api=1&query=%5BLandmark%201%5D%20%5BCity%20A%5D",
+            "address": "[Street address], [City A]",
+            "addressUrl": "https://www.google.com/maps/search/?api=1&query=%5BStreet%20address%5D%2C%20%5BCity%20A%5D",
+            "desc": "[1–4 sentences of shareable detail: what it is, what to look for, how long.]"
+          },
+          {
+            "name": "[Landmark 2]",
+            "url": "https://www.google.com/maps/search/?api=1&query=%5BLandmark%202%5D%20%5BCity%20A%5D",
+            "address": "[Street address], [City A]",
+            "addressUrl": "https://www.google.com/maps/search/?api=1&query=%5BStreet%20address%5D%2C%20%5BCity%20A%5D",
+            "desc": "[Detail.]"
+          },
+          {
+            "name": "[Viewpoint]",
+            "url": "https://www.google.com/maps/search/?api=1&query=%5BViewpoint%5D%20%5BCity%20A%5D",
+            "address": "[Street address], [City A]",
+            "addressUrl": "https://www.google.com/maps/search/?api=1&query=%5BStreet%20address%5D%2C%20%5BCity%20A%5D",
+            "desc": "[Detail — the furthest point of the loop.]"
+          },
+          {
+            "name": "[Market square]",
+            "url": "https://www.google.com/maps/search/?api=1&query=%5BMarket%20square%5D%20%5BCity%20A%5D",
+            "address": "[Street address], [City A]",
+            "addressUrl": "https://www.google.com/maps/search/?api=1&query=%5BStreet%20address%5D%2C%20%5BCity%20A%5D",
+            "desc": "[Detail — on the way back toward the hotel.]"
+          },
+          {
+            "name": "[Museum] (optional)",
+            "url": "https://www.google.com/maps/search/?api=1&query=%5BMuseum%5D%20%28optional%29%20%5BCity%20A%5D",
+            "address": "[Street address], [City A]",
+            "addressUrl": "https://www.google.com/maps/search/?api=1&query=%5BStreet%20address%5D%2C%20%5BCity%20A%5D",
+            "desc": "[Optional extras go last and say (optional).]"
+          }
+        ]
+      },
+      "callouts": [
+        {
+          "title": "🎟️  [Ticket tip]",
+          "body": "[e.g. book the tower climb online — slots sell out.]"
+        }
+      ],
+      "eat": [
+        {
+          "cat": "☕ Coffee",
+          "rec": "[Café name]",
+          "notes": "[why]"
+        },
+        {
+          "cat": "🍽 Lunch",
+          "rec": "[Place]",
+          "notes": "[why]"
+        },
+        {
+          "cat": "🌙 Dinner",
+          "rec": "[Restaurant 1]",
+          "notes": "[reservation time]"
+        }
+      ],
+      "foods": [
+        {
+          "name": "[Regional dish]",
+          "desc": "[What it is.]"
+        }
+      ],
+      "good": {
+        "photo": "[Best photo spots]",
+        "coffee": "[Coffee pick]",
+        "restrooms": "[Where to find restrooms]",
+        "rainy": "[Indoor backup]",
+        "packing": "[Day-bag reminder]"
+      }
+    },
+    {
+      "n": 3,
+      "weekday": "Thursday",
+      "date": "June 3",
+      "iso": "2027-06-03",
+      "short": "Thu, Jun 3",
+      "leg": "b",
+      "headline": "[City A] → [City B]",
+      "subtitle": "[Morning in City A · transfer · evening in City B]",
+      "overview": "[A two-place day: a transit connector row separates the legs.]",
+      "weather": "[Avg ~19°C / 66°F]",
+      "walking": "[~4 km]",
+      "transport": "[Private driver ~2 hr]",
+      "schedule": [
+        {
+          "time": "[9:00]",
+          "plan": "[Driver pickup at Hotel A]"
+        },
+        {
+          "time": "[11:30]",
+          "plan": "[Check in at Hotel B]"
+        },
+        {
+          "time": "[13:00]",
+          "plan": "[Walk — stops 2–3]"
+        }
+      ],
+      "tour": {
+        "intro": "[Furthest-first: start at the far end of town and work back toward Hotel B.]",
+        "stops": [
+          {
+            "name": "[Morning stop]",
+            "url": "https://www.google.com/maps/search/?api=1&query=%5BMorning%20stop%5D%20%5BCity%20A%5D",
+            "address": "[Street address], [City A]",
+            "addressUrl": "https://www.google.com/maps/search/?api=1&query=%5BStreet%20address%5D%2C%20%5BCity%20A%5D",
+            "desc": "[Detail.]"
+          },
+          {
+            "transit": true,
+            "name": "[City A] → [City B] by [car / train]",
+            "url": "https://www.google.com/maps/search/?api=1&query=%5BCity%20B%5D",
+            "desc": "[How to get there: operator, duration, platform, cost.]"
+          },
+          {
+            "name": "[Landmark 3]",
+            "url": "https://www.google.com/maps/search/?api=1&query=%5BLandmark%203%5D%20%5BCity%20B%5D",
+            "address": "[Street address], [City B]",
+            "addressUrl": "https://www.google.com/maps/search/?api=1&query=%5BStreet%20address%5D%2C%20%5BCity%20B%5D",
+            "desc": "[Detail — furthest from the hotel.]"
+          },
+          {
+            "name": "[Riverside walk]",
+            "url": "https://www.google.com/maps/search/?api=1&query=%5BRiverside%20walk%5D%20%5BCity%20B%5D",
+            "address": "[Street address], [City B]",
+            "addressUrl": "https://www.google.com/maps/search/?api=1&query=%5BStreet%20address%5D%2C%20%5BCity%20B%5D",
+            "desc": "[Detail — ends near Hotel B.]"
+          }
+        ]
+      },
+      "callouts": [],
+      "eat": [
+        {
+          "cat": "🌙 Dinner",
+          "rec": "[Restaurant 2]",
+          "notes": "[why]"
+        }
+      ],
+      "foods": [],
+      "good": {
+        "photo": "[Best photo spots]",
+        "coffee": "[Coffee pick]",
+        "restrooms": "[Where to find restrooms]",
+        "rainy": "[Indoor backup]",
+        "packing": "[Day-bag reminder]"
+      }
+    },
+    {
+      "n": 4,
+      "weekday": "Friday",
+      "date": "June 4",
+      "iso": "2027-06-04",
+      "short": "Fri, Jun 4",
+      "leg": "transit",
+      "headline": "Fly Home",
+      "subtitle": "[[City B]] → [Home]",
+      "overview": "[Checkout, transfer, flight.]",
+      "weather": "",
+      "walking": "",
+      "transport": "[Train to airport ~30 min]",
+      "schedule": [
+        {
+          "time": "[8:00]",
+          "plan": "[Checkout — run the Hotel checkout list]"
+        },
+        {
+          "time": "[11:00]",
+          "plan": "[Flight departs]"
+        }
+      ],
+      "tour": null,
+      "callouts": [
+        {
+          "title": "🧾  [Tax refund]",
+          "body": "[Get forms stamped at customs before check-in.]"
+        }
+      ],
+      "eat": [],
+      "foods": [],
+      "good": {}
+    }
+  ]
+}
